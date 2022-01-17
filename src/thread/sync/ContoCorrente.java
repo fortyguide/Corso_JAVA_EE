@@ -22,8 +22,8 @@ public class ContoCorrente {
 		
 		BufferedReader br = null;
 		try {
-			File fin = new File(new File(".").getCanonicalPath() + File.separator + "db.txt");
-			
+			File fin = new File(new File(".").getCanonicalPath() + File.separator + "db/db.txt");
+
 			br = new BufferedReader(new FileReader(fin));
 			 
 			String line = null;
@@ -55,7 +55,7 @@ public class ContoCorrente {
 			double nuovoSaldo = getSaldo() - somma;
 
 			if(nuovoSaldo > 0) {
-				fw = new FileWriter(new File(".").getCanonicalPath() + File.separator + "db.txt");
+				fw = new FileWriter(new File(".").getCanonicalPath() + File.separator + "db/db.txt");
 				bw = new BufferedWriter(fw);
 				bw.write(nuovoSaldo+"");
 			} else
@@ -86,7 +86,7 @@ public class ContoCorrente {
 			double nuovoSaldo = getSaldo() - somma;
 
 			if(nuovoSaldo > 0) {
-				fw = new FileWriter(new File(".").getCanonicalPath() + File.separator + "db.txt");
+				fw = new FileWriter(new File(".").getCanonicalPath() + File.separator + "db/db.txt");
 				bw = new BufferedWriter(fw);
 				bw.write(nuovoSaldo+"");
 			} else
