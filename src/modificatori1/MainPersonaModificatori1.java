@@ -7,7 +7,7 @@ public class MainPersonaModificatori1 {
 
         p.cammina();
         p.dormi();
-        p.bevi(); //bevi() has private access in modificatori1.Persona
+        /*p.bevi(); //bevi() has private access in modificatori1.Persona*/
         p.mangia();
     }
 }

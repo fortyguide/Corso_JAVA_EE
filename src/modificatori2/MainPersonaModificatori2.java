@@ -8,8 +8,8 @@ public class MainPersonaModificatori2 {
         Persona p = new Persona();
 
         p.cammina();
-        p.dormi(); //dormi() is not public in modificatori1.Persona;
+        /*p.dormi(); //dormi() is not public in modificatori1.Persona;
         p.bevi(); //bevi() has private access in modificatori1.Persona
-        p.mangia(); //mangia() has protected access in modificatori1.Persona
+        p.mangia(); //mangia() has protected access in modificatori1.Persona*/
     }
 }
