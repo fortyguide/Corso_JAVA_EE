@@ -16,7 +16,7 @@ public class Prodotto {
     /*Altro costruttore, in cui vengono popolati gli attributi id, nome e descrizione.
     * Se, però, vengono svolte modifiche nei vari metodi getter e setter, questi
     * this nel costruttore fanno perdere tali modifiche, per cui conviene
-    * riscrivere il + come quello appena sotto di questo, cioè con i richiami
+    * riscrivere il costruttore come quello appena sotto di questo, cioè con i richiami
     * ai metodi getter e setter dove sono svolte le modifiche*/
 
     /*public Prodotto(int id, String nome, double prezzo) {
