@@ -34,5 +34,8 @@ public class MainGestionale {
         odv.getRigheOrdine().add(rg1);
         odv.getRigheOrdine().add(rg2);
 
+
+
     }
 }
+
