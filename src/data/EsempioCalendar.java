@@ -24,7 +24,7 @@ public class EsempioCalendar {
         parametro cosa vogliamo settare (giorno, mese, anno, minuto, secondo), mentre mediante il secondo
         parametro il valore */
         cal2.set(Calendar.YEAR, 2000);
-        cal2.set(Calendar.MONTH, 10); /* I mesi vanno da 0 a 11*/
+        cal2.set(Calendar.MONTH, 10); /* I mesi vanno da 0 a 11 */
         cal2.set(Calendar.DATE, 29);
 
         System.out.println(cal2.getTime()); // Wed Nov 29 15:54:40 CET 2000
