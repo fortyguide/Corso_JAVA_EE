@@ -14,7 +14,7 @@ public class LetturaFile {
 
     public void esempioFileReader(String filePath) {
         File f = new File(filePath);
-        if(f.exists()){
+        if (f.exists()) {
             FileReader fr = null;
             try {
                 fr = new FileReader(f);
@@ -26,10 +26,10 @@ public class LetturaFile {
                     /*fr.read(testo);*/
 
                     /*Faccio in modo che ciò che viene letto
-                    * nel file venga scritto anche sulla console*/
+                     * nel file venga scritto anche sulla console*/
                     /*########################*/
                     int size = fr.read(testo);
-                    for (int i = 0; i < size; i++){
+                    for (int i = 0; i < size; i++) {
                         System.out.print(testo[i]);
                     }
                     /*########################*/
@@ -50,7 +50,7 @@ public class LetturaFile {
 
     public void esempioBufferedReader(String filePath) {
         File f = new File(filePath);
-        if(f.exists()){
+        if (f.exists()) {
             BufferedReader br = null;
             try {
                 br = new BufferedReader(new FileReader(f));
@@ -65,7 +65,7 @@ public class LetturaFile {
                      * nel file venga scritto anche sulla console*/
                     /*########################*/
                     int size = br.read(testo);
-                    for (int i = 0; i < size; i++){
+                    for (int i = 0; i < size; i++) {
                         System.out.print(testo[i]);
                     }
                     /*########################*/
