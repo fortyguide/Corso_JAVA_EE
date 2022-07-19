@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
+    <content url="jar://$MODULE_DIR$/lib/mssql-jdbc-10.2.1.jre11.jar!/" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" scope="TEST">
@@ -63,6 +64,15 @@
           <root url="jar://$MODULE_DIR$/test/junit-jupiter-params-5.7.0.jar!/" />
           <root url="jar://$MODULE_DIR$/test/junit-jupiter-engine-5.7.0.jar!/" />
           <root url="jar://$MODULE_DIR$/test/junit-platform-engine-1.7.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-8.0.29.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
