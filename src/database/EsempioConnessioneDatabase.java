@@ -2,10 +2,7 @@ package database;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 
 public class EsempioConnessioneDatabase {
@@ -31,6 +28,13 @@ public class EsempioConnessioneDatabase {
             System.out.println("Le righe della query 'SELECT id, nome, cognome, email, telefono FROM clienti WHERE cognome LIKE '%Pre%'' sono le seguenti: ");
             System.out.println("-----------------------");
             esempioConnessioneDatabase.esempioSelect2();
+
+            esempioConnessioneDatabase.esempioInsert("Sara", "Bartoli", "sara@test.it", "9999999");
+            System.out.println("-----------------------");
+
+            esempioConnessioneDatabase.esempioUpdate();
+
+            esempioConnessioneDatabase.esempioDelete();
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -110,5 +114,37 @@ public class EsempioConnessioneDatabase {
             System.out.println("telefono = " + resultSet.getString(5));
             System.out.println("-----------------------");
         }
+    }
+
+    private void esempioInsert(String nome, String cognome, String email, String telefono) throws SQLException {
+        String sql = "INSERT INTO clienti(nome, cognome, email, telefono) " +
+                "VALUES ('"+nome+"', '"+cognome+"', '"+email+"', '"+telefono+"')";
+
+        /* Il RETURN_GENERATED_KEYS è da utilizzare nei casi in cui
+        l'id è generato automaticamente dal database */
+        PreparedStatement preparedStatement = getConnection().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+        preparedStatement.executeUpdate();
+
+        ResultSet resultSet = preparedStatement.getGeneratedKeys();
+        resultSet.next();
+
+        System.out.println("L'id della nuova riga inserita (INSERT) e' "+ resultSet.getInt(1));
+    }
+
+    private void esempioUpdate () throws SQLException {
+        String sql = "UPDATE clienti SET telefono = '12345678' WHERE id = 5";
+
+        PreparedStatement preparedStatement = getConnection().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+        preparedStatement.executeUpdate();
+    }
+
+    private void esempioDelete () throws SQLException {
+        String sql = "DELETE FROM clienti WHERE nome = 'Sara'";
+
+        PreparedStatement preparedStatement = getConnection().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+
+        preparedStatement.executeUpdate();
     }
 }
