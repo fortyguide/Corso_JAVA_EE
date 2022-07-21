@@ -20,12 +20,12 @@ public class EsempioConnessioneDatabase {
             System.out.println(esempioConnessioneDatabase.getConnection().isClosed()); // false
             System.out.println("-----------------------");
 
-            System.out.println("Le righe della query 'SELECT id, nome, cognome, email, telefono FROM clienti' sono le seguenti: ");
+            System.out.println("Le righe della query \"SELECT id, nome, cognome, email, telefono FROM clienti\" sono le seguenti: ");
             System.out.println("-----------------------");
             esempioConnessioneDatabase.esempioSelect();
 
 
-            System.out.println("Le righe della query 'SELECT id, nome, cognome, email, telefono FROM clienti WHERE cognome LIKE '%Pre%'' sono le seguenti: ");
+            System.out.println("Le righe della query \"SELECT id, nome, cognome, email, telefono FROM clienti WHERE cognome LIKE '%Pre%'\" sono le seguenti: ");
             System.out.println("-----------------------");
             esempioConnessioneDatabase.esempioSelect2();
 
