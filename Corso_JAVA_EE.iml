@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/db" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web_app/d" isTestSource="false" />
     </content>
     <content url="jar://$MODULE_DIR$/lib/mssql-jdbc-10.2.1.jre11.jar!/" />
     <orderEntry type="inheritedJdk" />
