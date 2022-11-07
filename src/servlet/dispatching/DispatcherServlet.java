@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 
 @WebServlet("/dispatcher") //http://localhost:8080/Corso_JAVA_EE/dispatcher
 public class DispatcherServlet extends HttpServlet {
