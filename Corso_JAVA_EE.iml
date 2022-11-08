@@ -86,7 +86,9 @@
           <root url="file://C:/Program Files/java/javax.servlet-3.0.jar" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/javax.servlet-3.0-sources.jar!/" />
+        </SOURCES>
         <jarDirectory url="file://C:/Program Files/java/javax.servlet-3.0.jar" recursive="false" />
       </library>
     </orderEntry>
