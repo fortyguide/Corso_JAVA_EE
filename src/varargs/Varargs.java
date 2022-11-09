@@ -1,4 +1,4 @@
-package servlet.varargs;
+package varargs;
 
 public class Varargs {
 
