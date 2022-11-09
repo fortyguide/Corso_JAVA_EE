@@ -92,5 +92,6 @@
         <jarDirectory url="file://C:/Program Files/java/javax.servlet-3.0.jar" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="itextpdf-5.5.9" level="application" />
   </component>
 </module>
