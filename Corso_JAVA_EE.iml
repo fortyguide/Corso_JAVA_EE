@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/web_app/d" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web_app/src" isTestSource="false" />
     </content>
     <content url="jar://$MODULE_DIR$/lib/mssql-jdbc-10.2.1.jre11.jar!/" />
     <orderEntry type="inheritedJdk" />
@@ -77,6 +78,28 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Program Files/java/javax.servlet-api-4.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://C:/Program Files/java/iText7-Core-7.1.3" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/Program Files/java/iText7-Core-7.1.3" />
+        </SOURCES>
+        <jarDirectory url="file://C:/Program Files/java/iText7-Core-7.1.3" recursive="false" />
+        <jarDirectory url="file://C:/Program Files/java/iText7-Core-7.1.3" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
   </component>
