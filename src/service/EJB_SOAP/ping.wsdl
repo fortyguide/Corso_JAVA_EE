@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://EJB_SOAP.service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="SOAP" targetNamespace="http://EJB_SOAP.service/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://EJB_SOAP.service/" elementFormDefault="unqualified" targetNamespace="http://EJB_SOAP.service/" version="1.0">
+
+  <xs:element name="saluta" type="tns:saluta"/>
+
+  <xs:element name="salutaResponse" type="tns:salutaResponse"/>
+
+  <xs:complexType name="saluta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="salutaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="saluta">
+    <wsdl:part element="tns:saluta" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="salutaResponse">
+    <wsdl:part element="tns:salutaResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="EJB_SOAP">
+    <wsdl:operation name="saluta">
+      <wsdl:input message="tns:saluta" name="saluta">
+    </wsdl:input>
+      <wsdl:output message="tns:salutaResponse" name="salutaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPSoapBinding" type="tns:EJB_SOAP">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="saluta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="saluta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="salutaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SOAP">
+    <wsdl:port binding="tns:SOAPSoapBinding" name="EJB_SOAPPort">
+      <soap:address location="http://localhost:8080/Corso_JAVA_EE/webservices/EJB_SOAP"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
